@@ -1,7 +1,9 @@
 'use strict';
 
 const getBooksSuccess = (data) => {
-  console.table(data);
+  if (data.book) {
+    console.table(data);
+  }
 };
 
 const failure = (error) => {
